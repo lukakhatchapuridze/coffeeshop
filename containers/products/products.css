@@ -1,0 +1,31 @@
+.coffee__products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee__products-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.coffee__products h1 {
+    color: white;
+}
+
+.coffee__products-title {
+    margin: 50px 0;
+}
+
+.coffee__products h1 span {
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 1050px) {
+    .coffee__products {
+        padding: 1rem 2rem;
+    }
+}

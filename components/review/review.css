@@ -1,0 +1,62 @@
+.coffee__review{
+    width: 33%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0;
+    justify-content: space-evenly;
+    border: 1px solid rgb(99, 96, 96);
+    transition: .3s;
+    margin-top: 30px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.coffee__review p{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.coffee__review-user-img {
+    height: 20%;
+}
+
+.coffee__review h1 {
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.coffee__review-stars {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+@media screen and (max-width: 880px) {
+    .coffee__review p {
+        font-size: 11px;
+    }
+    
+    .coffee__review h1 {
+        font-size: 22px;
+    }
+
+    .coffee__review-stars {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .coffee__review {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .coffee__review {
+        width: 80%;
+    }
+}

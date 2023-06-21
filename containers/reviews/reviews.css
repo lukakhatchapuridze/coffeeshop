@@ -1,0 +1,29 @@
+.coffee__reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.coffee__reviews-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.coffee__reviews-title {
+    color: white;
+    margin: 50px 0;
+}
+
+.coffee__reviews-title span {
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 1050px) {
+    .coffee__reviews {
+        padding: 1rem 2rem;
+    }
+}

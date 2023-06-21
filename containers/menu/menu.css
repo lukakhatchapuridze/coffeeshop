@@ -1,0 +1,30 @@
+.coffee__menu {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.coffee__menu-title{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.coffee__menu-title span {
+    color: var(--main-color);
+}
+
+.coffee__menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+@media screen and (max-width: 1050px) {
+    .coffee__menu {
+        padding: 1rem 2rem;
+    }
+}

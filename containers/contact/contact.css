@@ -1,0 +1,150 @@
+.coffee__contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.coffee__contact-title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.coffee__contact-title span {
+    color: var(--main-color);
+}
+
+.coffee__contact-container {
+    width: 100%;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.coffee__contact-container-mapbox {
+    width: 50%;
+}
+
+.coffee__contact-container-mapbox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.coffee__contact-container-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+    background: var(--black);
+}
+
+.coffee__contact-container-content h1 {
+    color: white;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee__contact-container-content form {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coffee__contact-container-content-inputbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30%;
+    width: 100%;
+    border: 1px solid rgb(138, 137, 137);
+}
+
+.coffee__contact-container-content-inputbox span {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.coffee__contact-container-content-inputbox input{
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    border: none;
+    text-transform: none;   
+    padding: 0 60px;
+    font-size: 17px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.coffee__contact-container-content-button {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee__contact-container-content-button button {
+    padding: 10px 30px;
+    color: white;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.coffee__contact-container-content-button button:hover {
+    background: #9b6f3b;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1050px) {
+    .coffee__contact {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .coffee__contact-container  {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coffee__contact-container-mapbox {
+        width: 70%;
+    }
+
+    .coffee__contact-container-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .coffee__contact-container-mapbox {
+        width: 100%;
+    }
+
+    .coffee__contact-container-content {
+        width: 100%;
+    }
+    
+    .coffee__contact-container-content h1 {
+        font-size: 25px;
+    }
+
+}

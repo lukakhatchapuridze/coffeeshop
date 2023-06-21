@@ -1,0 +1,84 @@
+.coffee__product {
+    width: 33%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0;
+    justify-content: space-evenly;
+    border: 1px solid rgb(99, 96, 96);
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 30px;
+}
+
+.coffee__product:hover {
+    background: white;
+}
+
+
+
+.coffee__product-icons {
+    color: white;
+    font-size: 25px;
+}
+
+.coffee__product-icons i {
+    margin-left: 20px;
+    transition: .6s;
+}
+
+.coffee__product:hover .coffee__product-icons i{
+    color: var(--main-color);
+}
+
+.coffee__product-stars {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.coffee__product-stars i {
+    margin-left: 5px;
+}
+
+.coffee__product h1 {
+    color: white;
+    font-size: 25px;
+    transition: 0.6s;
+}
+
+.coffee__product:hover h1 {
+    color: black;
+}
+
+.coffee__product p {
+    color: white;
+}
+
+.coffee__product:hover p {
+    color: black;
+}
+
+
+.coffee__product:hover p s {
+    color: black;
+}
+
+.coffee__product p s {
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .coffee__product {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .coffee__product {
+        width: 90%;
+    }
+}
+

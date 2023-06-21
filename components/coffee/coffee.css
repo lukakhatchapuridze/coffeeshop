@@ -1,0 +1,72 @@
+.coffee__container-coffee {
+    width: 33%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0;
+    justify-content: space-evenly;
+    border: 1px solid rgb(99, 96, 96);
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 3px;
+}
+
+.coffee__container-coffee:hover {
+    background-color: white;
+}
+
+.coffee__container-coffee h1 {
+    color: white;
+    font-size: 23px;
+}
+
+.coffee__container-coffee p {
+    color: rgb(185, 182, 182);
+    font-size: 18px;
+}
+
+.coffee__container-coffee p span s {
+    font-size: 12px;
+}
+
+.coffee__container-coffee button {
+    background: var(--main-color);
+    padding: 7px 40px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 16px;
+}
+
+.coffee__container-coffee button:hover {
+    background: #b68851;
+    letter-spacing: 1px;
+}
+
+.coffee__container-coffee:hover h1 {
+    color: black;
+}
+
+.coffee__container-coffee:hover p {
+    color: black;
+}
+
+.coffee__container-coffee:hover button {
+    color: black;
+}
+
+@media screen and (max-width: 830px) {
+    .coffee__container-coffee {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .coffee__container-coffee {
+        width: 80%;
+    }
+}
+

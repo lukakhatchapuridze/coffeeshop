@@ -1,0 +1,104 @@
+.coffee__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    color: white;
+    padding: 1rem 6rem;
+    height: 100px;
+    /* position: relative; */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: var(--bg);
+}
+
+.coffee__navbar-logo {
+    width: 25%;
+    cursor: pointer;
+}
+
+.coffee__navbar-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coffee__navbar-links a {
+    font-size: 18px;
+    transition: .3s;
+}
+
+.coffee__navbar-links a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+}
+
+.coffee__navbar-icons {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.coffee__navbar-icons i {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.coffee__navbar-icons i:hover {
+    color: var(--main-color);
+}
+
+.responsive {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .coffee__navbar {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .coffee__navbar-links {
+        display: none;
+    }
+
+    .responsive {
+        display: flex;
+    }
+
+    .coffee__navbar-links-responsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; right: -20%;
+        background: #fff;
+        width: 25rem;
+        padding: 1.5rem 1.5rem;
+        line-height: 2rem;
+        color: black;
+        height: calc(100vh - 9.5rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .coffee__navbar-links-responsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; right: -40%;
+        background: #fff;
+        width: 25rem;
+        padding: 1.5rem 1.5rem;
+        line-height: 2rem;
+        color: black;
+        height: calc(100vh - 9.5rem);
+    }
+}

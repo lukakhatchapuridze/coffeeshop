@@ -1,0 +1,119 @@
+.coffee__about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    outline: none;
+}
+
+.coffee__about h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+
+.coffee__about h1 span {
+    color: var(--main-color);
+}
+
+.coffee__about-container {
+    display: flex;
+}
+
+
+
+.coffee__about-container-imgbox {
+    width: 50%;
+
+}
+
+.coffee__about-container-content {
+    width: 50%;
+    background: var(--black);
+    padding: 50px 20px;
+}
+
+.coffee__about-container-content-child {
+    height: 100%;
+}
+
+.coffee__about-container-content-child h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.coffee__about-container-content-child p {
+    color: rgb(187, 187, 187);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.coffee__about-container-content-child button {
+    padding: 10px 40px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.coffee__about-container-content-child button:hover {
+    padding: 10px 50px;
+    background: #b68851;
+}
+
+.coffee__about-container-imgbox img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    .coffee__about-container-content-child h2 {
+        font-size: 23px;
+    }
+
+    .coffee__about-container-content-child p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .coffee__about {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width:  830px) {
+    .coffee__about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee__about-container-imgbox img {
+        height: 100%;
+    }
+
+    .coffee__about-container-imgbox,
+    .coffee__about-container-content {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .coffee__about-container-imgbox,
+    .coffee__about-container-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
